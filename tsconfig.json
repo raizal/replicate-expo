@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "lib": ["ESNext", "DOM"],
+    "allowJs": true,
+    "jsx": "react",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "rootDirs": ["src", "stories"],
+    "importHelpers": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "preserveConstEnums": true,
+    "forceConsistentCasingInFileNames": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "noEmitHelpers": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@src/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@modules/*": ["src/modules/*"],
+      "@services/*": ["src/services/*"],
+      "@stores/*": ["src/stores/*"],
+      "@themes/*": ["src/themes/*"]
+    }
+  },
+  "exclude": [
+    "App.js",
+    "App.test.js",
+    "build",
+    "node_modules"
+  ],
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "compileOnSave": false,
+  "extends": "expo/tsconfig.base",
+  "typeRoots": ["./src/types"]
+}
